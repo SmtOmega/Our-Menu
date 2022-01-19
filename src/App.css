@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 1300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,6 +52,7 @@ p {
   justify-content: center;
   align-items: center;
   margin: 10px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -95,7 +97,14 @@ p {
 }
 
 @media screen and (max-width: 700px){
+  .App {
+    width: 95vw;
+  }
   .container {
     margin: 0 auto;
+  }
+  .btn {
+    margin: 1px;
+    padding: 10px 5px;
   }
 }
